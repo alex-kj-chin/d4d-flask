@@ -41,3 +41,6 @@ export FLASK_DEBUG=1
 ```
 <br>
 You might notice some similarities between the `FLASK_ENV=development` and the initial code you used to run flask--`FLASK_APP=web.py`. This is because `FLASK_APP` is also an environmental variable! What environment do you think it is setting?
+<br>
+There are some files that if changed still require restarting the site--try to figure out which ones these are.
+
