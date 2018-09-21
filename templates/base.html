@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alex's Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type='text/css' href="/static/css/base.css">
+  {% block header %}{% endblock %}
+</head>
+<body>
+  <ul class="sticky-top">
+    <li><a href="/">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+  {% block content %}
+  {% endblock %}
+</html>
+</body>
