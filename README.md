@@ -8,7 +8,14 @@ If you want to see an example flask page, you can check out this [website](https
 
 # Setup
 
-First, you'll need to install the python module for flask. You can do this in pip with
+First, you should install a virtual environment (although this is technically optional, I would strongly advise doing so).
+<br>
+`sudo pip install virtualenv`
+Now you can use virtualenv to create a virtual environment for our flask website project by typing in
+<br>
+`virtualenv flaskapp`
+<br>
+Next, you'll need to install the python module for flask. You can do this in pip with
 <br>
 `pip install Flask`
 <br>
@@ -22,13 +29,13 @@ Navigate to `localhost:5000` in a browser (just paste this into the URL bar) to 
 
 ## Architecture
 
-Flask works on a system of HTML templates.
+When flask receives an HTTP request, this request is sent to the `web.py` file, which excecutes and returns an appropriate message back to the requester. Usually this means that the python function grabs a template from the templates folder, loads in the css and images (if they are not cached--why do you think browsers cache things?), and then returns the rendered HTML to the browser.
 
 If you're interested in learning about the architectures for other common web frameworks, I would recommend learning about Django's MVT (Models, Views, and Templates) architecture.
 
 ## Jinja
 
-Jinja is a template engine based in python, and it's what Flask uses for templating. One of the main features of templates is that they can be extended (if you've learned an object-oriented language, you could analogize this to inheritance between classes).
+Jinja is a template engine based in python, and it's what Flask uses for templating. One of the main features of templates is that they can be extended (if you've learned an object-oriented language, you could analogize this to inheritance between classes). You can also use Jinja to embed python logic in HTML templates or make HTML templates interface with data storage structures you are using. I'd advise doing some of this as it can be quite rewarding!
 
 If you continue doing web development, you will almost certainly use Jinja or similar implementation of placeholders and templates. This is a common trend in programming--even accross different SDKs or frameworks, there will often be shared concepts!
 
